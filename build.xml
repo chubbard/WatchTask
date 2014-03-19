@@ -6,10 +6,6 @@
     <property name="target.dir" value="${basedir}/target/classes"/>
     <property name="target.test.dir" value="${basedir}/target/test-classes"/>
 
-    <taskdef name="watch"
-             classname="org.apache.tools.ant.taskdefs.optional.watch.WatchTask"
-             classpath="${basedir}/target/classes" />
-
     <target name="run">
         <watch>
             <when>
@@ -29,9 +25,10 @@
     </target>
 
     <target name="compile" depends="clean">
+        <mkdir dir="${target.dir}"/>
         <javac srcdir="${src.dir}" debug="true" destdir="${target.dir}" includeantruntime="true"/>
 
-        <mkdir dir="${src.test.dir}"/>
+        <mkdir dir="${target.test.dir}"/>
         <javac srcdir="${src.test.dir}" debug="true" destdir="${target.test.dir}" includeantruntime="false"/>
     </target>
 
