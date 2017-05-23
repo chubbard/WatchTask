@@ -6,6 +6,13 @@ This is great for automatically executing tasks whenever certain files are modif
 For example, compiling LESS, SASS, combining and minifying Javascript, etc.  This
 task requires a minimum Java version >= 1.7.x.
 
+Get It
+=========
+
+[![](https://jitpack.io/v/chubbard/WatchTask.svg)](https://jitpack.io/#chubbard/WatchTask)
+
+Use the badge above to find the instructions on how to setup your project to use it as a dependency.
+
 Example
 ==========
 
