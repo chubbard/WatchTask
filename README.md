@@ -11,7 +11,12 @@ Get It
 
 [![](https://jitpack.io/v/chubbard/WatchTask.svg)](https://jitpack.io/#chubbard/WatchTask)
 
-Use the badge above to find the instructions on how to setup your project to use it as a dependency.
+Use the badge above to find the instructions on how to setup your project to use it as a dependency (maven, gradle, ivy, etc).
+
+If you aren't using a depedency management software package you can download the jar directly using the 
+following command:
+
+    mvn dependency:get -DremoteRepositories=https://jitpack.io -Dartifact=com.github.chubbard:WatchTask:-SNAPSHOT -Ddest=.
 
 Example
 ==========
